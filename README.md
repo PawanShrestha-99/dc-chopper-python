@@ -25,3 +25,26 @@ Diode ACROSS Motor (Band toward +)
 
 ## 📺 YouTube Tutorial
 https://youtu.be/GmGzpH8uKuk
+
+#arduino code
+
+## 📜 Arduino Code
+```cpp
+void setup() {
+    Serial.begin(9600);
+    pinMode(9, OUTPUT);
+    Serial.println("Chopper Ready!");
+}
+
+void loop() {
+    if(Serial.available() > 0) {
+        int percent = Serial.parseInt();
+        if(percent >= 0 && percent <= 100) {
+            int pwmValue = percent * 255 / 100;
+            analogWrite(9, pwmValue);
+            Serial.print("Speed: ");
+            Serial.print(percent);
+            Serial.println("%");
+        }
+    }
+}
