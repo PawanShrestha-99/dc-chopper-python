@@ -50,7 +50,7 @@ void loop() {
 }
 
 
-python code;
+#python code;
 import serial
 import time
 
