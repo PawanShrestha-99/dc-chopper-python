@@ -17,11 +17,12 @@ Python-controlled DC chopper for motor speed control using Arduino, MOSFET, and 
 - 12V Power Supply
 - Breadboard + Jumper Wires
 
-## 🔧 Circuit ConnectionArduino Pin 9 → 220Ω → MOSFET Gate
-MOSFET Source → GND
-MOSFET Drain → Motor (-)
-Motor (+) → 12V Supply (+)
-Diode ACROSS Motor (Band toward +)
+## 🔧 Circuit ConnectionArduino :
+1,Pin 9 → 220Ω → MOSFET Gate
+2,MOSFET Source → GND and 12- supply (-) connect together 
+3,MOSFET Drain → Motor (-)
+4,Motor (+) → 12V Supply (+)
+5,Diode ACROSS Motor (Band toward +)
 
 ## 📺 YouTube Tutorial
 https://youtu.be/GmGzpH8uKuk
@@ -50,7 +51,7 @@ void loop() {
 }
 
 
-#python code;
+##python code;
 import serial
 import time
 
