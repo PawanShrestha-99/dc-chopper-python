@@ -31,7 +31,7 @@ Python-controlled DC chopper for motor speed control using Arduino, MOSFET, and 
 ## 📺 YouTube Tutorial
 https://youtu.be/GmGzpH8uKuk
 
-#arduino code
+
 
 ## 📜 Arduino Code
 ```cpp
